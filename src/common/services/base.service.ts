@@ -12,8 +12,8 @@ export class BaseService<D, E> implements BaseServiceInterface<D, E> {
     return this.baseRepository.findOneById(id)
   }
 
-  create(data: D): Promise<E> {
-    return this.baseRepository.create(data)
+  async create(data: D): Promise<E> {
+    return await this.baseRepository.create(data)
   }
 
   delete(id: number): Promise<E> {

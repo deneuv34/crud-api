@@ -1,8 +1,8 @@
 export interface BaseRepositoryInterface<I, E> {
-  findAll(option: { [option: string]: any }): Promise<E[]>
-  findOne(option: { [option: string]: any }): Promise<E>
+  findAll(data: { [key: string]: any }): Promise<E[]>
+  findOne(data: { [key: string]: any }): Promise<E>
   findOneById(id: number): Promise<E>
-  create(option: I): Promise<E>
+  create(data: I): Promise<E>
   delete(id: number): Promise<E>
-  update(id: number, option: { [option: string]: any }): Promise<E>
+  update(id: number, data: { [key: string]: any }): Promise<E>
 }

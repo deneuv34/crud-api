@@ -1,12 +1,12 @@
 'use-strict'
-import { Column } from 'typeorm'
+import { UpdateDateColumn, CreateDateColumn } from 'typeorm'
 
 export default abstract class BaseEntity {
-  id?: number | string
+  id: number | string | undefined
 
-  @Column({ type: 'datetime' })
+  @CreateDateColumn({ type: 'timestamp' })
   public created_at: string
 
-  @Column({ type: 'datetime', nullable: true })
+  @UpdateDateColumn({ type: 'timestamp' })
   public updated_at?: string
 }
