@@ -1,4 +1,4 @@
-'use-strict';
+'use-strict'
 
-export * from './IUser';
-export * from './IUserService';
+export * from './IUser'
+export * from './IUserService'

@@ -35,6 +35,18 @@
     ],
     "no-empty-interface": false,
     "no-empty": false,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": {
+          "objects": "never",
+          "arrays": "always",
+          "functions": "never",
+          "typeLiterals": "ignore"
+        },
+        "esSpecCompliant": true
+      }
+    ],
     "semicolon": [false, "never"],
     "arrow-parens": false,
     "object-literal-sort-keys": false,
