@@ -2,6 +2,7 @@
 
 import { Injectable } from '@nestjs/common'
 
+@Injectable()
 export class ADP<T> {
 	updateAssign(oldObj: T, newObj: BaseObject): T {
 		// tslint:disable-next-line:forin
