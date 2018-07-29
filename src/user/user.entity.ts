@@ -1,4 +1,4 @@
-import BaseEntity from 'common/entity/base.entity'
+import BaseEntity from '../common/entity/base.entity'
 import { Column, PrimaryGeneratedColumn, Entity } from 'typeorm'
 import { IUser } from './interfaces'
 

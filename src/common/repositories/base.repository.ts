@@ -1,6 +1,6 @@
 import { BaseRepositoryInterface } from './base.repository.interface'
 import { Repository } from 'typeorm'
-import { ADP } from 'helpers/adapters/adapter';
+import { ADP } from '../../helpers/adapters/adapter';
 
 export class BaseRepository<I, E> implements BaseRepositoryInterface<I, E> {
   constructor(

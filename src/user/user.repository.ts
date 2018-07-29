@@ -1,10 +1,9 @@
 import { BaseRepository } from '../common/repositories/base.repository'
 import { InjectRepository } from '@nestjs/typeorm'
 import { Repository } from 'typeorm'
-import { IUser } from './interfaces'
 import { Users } from './user.entity'
 import { Injectable } from '@nestjs/common';
-import { ADP } from 'helpers/adapters/adapter';
+import { ADP } from '../helpers/adapters/adapter';
 import { UserDto } from './dto/user.dto';
 
 @Injectable()
