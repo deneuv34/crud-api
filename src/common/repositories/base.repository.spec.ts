@@ -8,6 +8,19 @@ import { IUser } from '../../user/interfaces';
 
 describe('BaseRepository Test', () => {
     let baseRepository: BaseRepository<IUser, Users>
+
+    const repository = jest.fn<Repository<Users>>(() => ({
+        save: jest.fn(),
+        find: jest.fn(),
+        delete: jest.fn(),
+        findOne: jest.fn()
+    }))
+
+    const Adp = jest.fn<ADP<Users>>(() => ({
+        ifToEntity: jest.fn(),
+        ifToEntityCreateCase: jest.fn()
+    }))
+
     beforeEach(async () => {
         const module = await Test.createTestingModule({
             imports: [],
@@ -26,16 +39,8 @@ describe('BaseRepository Test', () => {
     })
 
     it('should create data', async () => {
-        const Mock = jest.fn<Repository<Users>>(() => ({
-            save: jest.fn()
-        }))
 
-        const Adp = jest.fn<ADP<Users>>(() => ({
-            ifToEntity: jest.fn(),
-            ifToEntityCreateCase: jest.fn()
-        }))
-
-        const mock = new Mock()
+        const mock = new repository()
 
         const adp = new Adp()
         const instance = new BaseRepository(mock, adp)
@@ -47,17 +52,8 @@ describe('BaseRepository Test', () => {
     })
 
     it('should index all data', async () => {
-        const Mock = jest.fn<Repository<Users>>(() => ({
-            save: jest.fn(),
-            find: jest.fn()
-        }))
 
-        const Adp = jest.fn<ADP<Users>>(() => ({
-            ifToEntity: jest.fn(),
-            ifToEntityCreateCase: jest.fn()
-        }))
-
-        const mock = new Mock()
+        const mock = new repository()
 
         const adp = new Adp()
         const instance = new BaseRepository(mock, adp)
@@ -68,18 +64,8 @@ describe('BaseRepository Test', () => {
     })
 
     it('should index all data', async () => {
-        const Mock = jest.fn<Repository<Users>>(() => ({
-            save: jest.fn(),
-            find: jest.fn(),
-            delete: jest.fn()
-        }))
 
-        const Adp = jest.fn<ADP<Users>>(() => ({
-            ifToEntity: jest.fn(),
-            ifToEntityCreateCase: jest.fn()
-        }))
-
-        const mock = new Mock()
+        const mock = new repository()
 
         const adp = new Adp()
         const instance = new BaseRepository(mock, adp)
@@ -90,19 +76,8 @@ describe('BaseRepository Test', () => {
     })
 
     it('has find by id method', async () => {
-        const Mock = jest.fn<Repository<Users>>(() => ({
-            save: jest.fn(),
-            find: jest.fn(),
-            delete: jest.fn(),
-            findOne: jest.fn()
-        }))
 
-        const Adp = jest.fn<ADP<Users>>(() => ({
-            ifToEntity: jest.fn(),
-            ifToEntityCreateCase: jest.fn()
-        }))
-
-        const mock = new Mock()
+        const mock = new repository()
 
         const adp = new Adp()
         const instance = new BaseRepository(mock, adp)
