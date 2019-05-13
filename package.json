@@ -23,7 +23,7 @@
     "fastify-formbody": "2.0.1",
     "mysql": "2.16.0",
     "reflect-metadata": "0.1.12",
-    "rxjs": "6.2.2",
+    "rxjs": "6.5.2",
     "typeorm": "0.2.7",
     "typescript": "2.9.2"
   },
