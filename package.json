@@ -31,7 +31,7 @@
     "@nestjs/testing": "5.1.0",
     "@types/express": "4.16.1",
     "@types/jest": "21.1.10",
-    "@types/node": "9.6.24",
+    "@types/node": "9.6.48",
     "@types/supertest": "2.0.5",
     "jest": "21.2.1",
     "nodemon": "1.18.3",
