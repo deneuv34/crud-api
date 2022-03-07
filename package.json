@@ -24,7 +24,7 @@
     "mysql": "2.18.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.2",
-    "typeorm": "0.2.19",
+    "typeorm": "0.2.27",
     "typescript": "3.7.5"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "tsconfig-paths": "3.8.0",
     "tslint": "5.20.1",
     "webpack": "4.39.1",
-    "webpack-cli": "3.3.5",
+    "webpack-cli": "4.0.0",
     "webpack-node-externals": "1.7.2"
   },
   "jest": {
