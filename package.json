@@ -20,7 +20,7 @@
     "@nestjs/common": "6.11.11",
     "@nestjs/core": "6.11.11",
     "@nestjs/typeorm": "6.2.0",
-    "fastify-formbody": "3.1.0",
+    "fastify-formbody": "3.2.0",
     "mysql": "2.18.1",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.2",
